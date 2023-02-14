@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="form">
+        <h3>Assignment-3</h3>
+        <p>Check whether your name contains any digit by mistake</p>
+            Enter Name : <input type="text" id="num1" class="textbox"> <br>
+            Enter lName: <input type="text" id="num2" class="textbox"> <br>
+           
+    
+            <input type="submit" onclick="lendif()" ><br><br><br><br>
+    
+            
+      
+    
+        <p id="result"></p>
+
+    </div>
+   
+
+    <script>
+function numcheck() {
+    len = 0
+    nm = document.getElementById('num1').value;
+    for (let i = 0; i < nm.length; i++) {
+        if (Number.isInteger(Number(nm.charAt(i))) == true) {
+            // document.write("Integer char spoted")
+            document.getElementById("result").innerHTML = "Integer char spoted ";
+            break;
+        }
+        else{
+            len = len+1;
+        }
+     
+        
+        
+    }
+
+    if (len == nm.length) {
+        document.getElementById("result").innerHTML = "Integer not char spoted ";
+        // document.write("Integer char not spoted")
+        
+    }
+
+   
+
+
+   
+}
+    </script>
+</body>
+</html>

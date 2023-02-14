@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="form">
+        <h3>Assignment-3</h3>
+        <p>Check whether a number is odd or even</p>
+            Enter number: <input type="text" id="num1" class="textbox"> <br>
+       
+       
+
+         <input type="submit" onclick="eoro()" ><br>
+    
+        <p id="result"></p>
+
+    </div>
+   
+
+    <script>
+        function eoro(){
+    num1 = parseInt(document.getElementById('num1').value)
+    if (num1 % 2 == 0) {
+        document.getElementById("result").innerHTML = "The number is even " ;
+    }
+    else{
+        document.getElementById("result").innerHTML = " The number is odd ";
+    }
+
+}
+    </script>
+</body>
+</html>

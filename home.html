@@ -1,0 +1,49 @@
+<html>
+ 
+<head>
+    <title>
+        Factorial 
+    </title>
+</head>
+ 
+<body >
+     
+    
+    <h3>Assignment-3</h3>
+    <p>Find the factorial value of a number</p>
+    Enter number: <input type="text" id="num1" class="textbox"> <br>
+         
+    <button onclick = "GFG_Fun()">
+        Click Here
+    </button>
+     
+    <p id = "GFG_DOWN">
+    </p>
+  
+         
+    <script>
+        
+        var  num1 = parseInt(document.getElementById('num1').value);
+        var down = document.getElementById('GFG_DOWN');
+       
+        // up.innerHTML = "Click on the button to calculate"
+        //         + " the factorial of n.<br>n = " + num1;
+         
+        // function Factorial(num1) {
+        //     var ans=1;
+             
+        //     for (var i = 2; i <= num1; i++)
+        //         ans = ans * i;
+        //     return ans;
+        // }
+         
+        function GFG_Fun(num1) {
+            for (var i = 2; i <= num1; i++)
+                ans = ans * i;
+            return ans;
+            down.innerHTML = Factorial(num1);
+        }
+    </script>
+</body>
+ 
+</html>

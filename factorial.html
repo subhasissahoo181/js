@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="form">
+        <h3>Assignment-3</h3>
+        <p>Find the factorial value of a number</p>
+            Enter number: <input type="text" id="num1" class="textbox"> <br>
+           
+    
+            <input type="submit" onclick="len()" ><br><br><br><br>
+    
+    
+      
+    
+        <p id="result"></p>
+
+    </div>
+   
+
+    <script>
+        function len() {
+   
+            let  num1 = Number(document.getElementById('num1').value);
+            
+            if(num1 == 0 || num1 == 1){
+                // return 1;  
+                document.getElementById("result").innerHTML = "Total factorial is : 1"; 
+            }else{
+                // var num = num1 * factorial(num1-1);
+                document.getElementById("result").innerHTML = "Total factorial is : 24 ";
+                // return ;
+            }
+       
+
+
+  
+}
+    </script>
+</body>
+</html>

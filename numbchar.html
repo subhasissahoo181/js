@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="form">
+        <h3>Assignment-3</h3>
+        <p>Find the difference between the number of character in your last name and first name
+        </p>
+        Enter FName : <input type="text" id="num1" class="textbox"> <br>
+        Enter LName: <input type="text" id="num2" class="textbox"> <br>
+       
+
+        <input type="submit" onclick="lendif()" ><br><br><br><br>
+      
+    
+        <p id="result"></p>
+
+    </div>
+   
+
+    <script>
+    function lendif() {
+   
+        fn = document.getElementById('num1').value;
+        ln = document.getElementById('num2').value;
+        num = Number(fn.length) - Number(ln.length)
+     
+        // document.write("Difference: " + num)
+        document.getElementById("result").innerHTML = "Difference: " + num;
+    
+       
+    }
+    </script>
+</body>
+</html>

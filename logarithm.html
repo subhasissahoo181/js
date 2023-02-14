@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div class="form">
+        <h3>Assignment-3</h3>
+        <p>Design a logarithmic calculator to perform some basic log operation
+
+        </p>
+        Enter Number : <input type="text" id="num1" class="textbox"> <br>
+       
+       
+
+        <input type="submit" onclick="lendif()" ><br><br><br><br>
+      
+    
+        <p id="result"></p>
+
+    </div>
+   
+
+    <script>
+    function lendif() {
+        var value = Number(document.getElementById("num1").value)
+        bal = Math.log(value);
+        document.getElementById("result").innerHTML = "Logarithm of  " + value +" is "+ bal;
+
+   
+       
+    
+       
+    }
+    </script>
+</body>
+</html>
